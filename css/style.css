@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+ 
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    line-height: 2.6rem;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: var(--light-gray);
+}
+body {
+    font-size: 1.6rem;
+   
+}
+
+.card {
+    width: 660px;
+    max-width: 100%;
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    min-height: 450px;
+    overflow: hidden;
+}
+.card__heading,
+.card__sign-up,
+.card__why-us {
+    padding: 30px;
+}
+.card__heading {
+    background-color: #fff;
+ 
+}
+.heading {
+    color: #fff;
+    font-weight: 700;
+}
+.heading--blue {
+    color: var(--cyan);
+} 
+.heading-sub {
+    font-weight: 700;
+    color: var(--bright-yellow);
+    margin: 20px 0;
+}
+.heading-details {
+    color: var(--grayish-blue);
+    margin-bottom: 10px;
+}
+.card__sign-up {
+    background-color: hsla(179, 62%, 43%, 0.9);
+    flex: 1;
+    color: #fff;
+}
+.price {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.price__value {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-right: 8px;
+}
+.price__sub {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.details {
+    margin: 10px 0 30px 0;
+}
+.btn {
+   
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+}
+.card__why-us {
+    background-color: hsla(179, 62%, 43%,0.7);
+    flex: 1;
+
+}
+.paragraph {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 2rem;
+}
+footer {
+    margin-top: 18px;
+}
+.attribution { font-size: 1.3rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media  (max-width: 700px) {
+    .card {
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    
+}
